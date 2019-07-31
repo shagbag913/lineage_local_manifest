@@ -19,5 +19,5 @@ repo init -u https://github.com/LineageOS/android/ -b lineage-16.0
 
 Put this file into .repo/local_manifests (run this from top of Lineage source):
 ```
-curl --create-dirs -o .repo/local_manifests/lineageos_fork.xml https://github.com/shagbag913/lineage_local_manifest
+curl --create-dirs -o .repo/local_manifests/lineageos_fork.xml https://raw.githubusercontent.com/shagbag913/lineage_local_manifest/lineage-16.0/lineage_fork.xml
 ```
