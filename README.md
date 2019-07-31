@@ -13,7 +13,11 @@ I'm just having fun and messing around.
 
 ## To sync:
 Initialize LineageOS manifest:
-`repo init -u https://github.com/LineageOS/android/ -b lineage-16.0`
+```
+repo init -u https://github.com/LineageOS/android/ -b lineage-16.0
+```
 
-Put this file into .repo/local_manifests:
-`curl --create-dirs -o .repo/local_manifests/lineageos_fork.xml https://github.com/shagbag913/lineage_local_manifest`
+Put this file into .repo/local_manifests (run this from top of Lineage source):
+```
+curl --create-dirs -o .repo/local_manifests/lineageos_fork.xml https://github.com/shagbag913/lineage_local_manifest
+```
