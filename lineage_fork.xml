@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github"
+  <remote name="shagbag913"
       fetch="https://github.com/shagbag913/" />
   <default revision="lineage-16.0"
-      remote="github"
+      remote="shagbag913"
       sync-c="true"
       sync-j="8" />
 
