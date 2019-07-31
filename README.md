@@ -11,6 +11,9 @@ I'm just having fun and messing around.
 - Lawnchair launcher included as default launcher
 - Slimmed down the power menu
 
+## NOTE:
+Lineage's upstream changes are *never* merged into my forks. Instead, I rebase my commits on top of Lineage's. This means force pushes happen pretty much every time Lineage pushes commits to the affected project.
+
 ## To sync:
 Initialize LineageOS manifest:
 ```
