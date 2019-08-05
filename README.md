@@ -1,9 +1,9 @@
 # LineageOS fork local manifest
 
-## Why?
-I'm just having fun and messing around.
+## Why does this exist?
+I'm just having fun and messing around. I really enjoy LineageOS, but I just wanted the ability to mess around in source, without having the overhead of bringing up common custom ROM stuff (inline kernel building, APNs, etc).
 
-## Platform changes from official LineageOS sources
+## Main differences from LineageOS
 - Includes Google Pixel alarm, ringtone, notification, and UI sounds
 - Google Sans font family used in some areas
 - Quick settings vibration when tapping tile
@@ -11,16 +11,24 @@ I'm just having fun and messing around.
 - Lawnchair launcher included as default launcher
 - Slimmed down the power menu
 
-## NOTE:
+## Updates
 Lineage's upstream changes are *never* merged into my forks. Instead, I rebase my commits on top of Lineage's. This means force pushes happen pretty much every time Lineage pushes commits to the affected project.
 
-## To sync:
-Initialize LineageOS manifest:
+## Syncing
+First, initialize LineageOS manifest:
 ```
 repo init -u https://github.com/LineageOS/android/ -b lineage-16.0
 ```
 
-Put this file into .repo/local_manifests (run this from top of Lineage source):
+Then, add my local manifest (run this from top of Lineage source):
 ```
 curl --create-dirs -o .repo/local_manifests/lineage_fork.xml https://raw.githubusercontent.com/shagbag913/lineage_local_manifest/lineage-16.0/lineage_fork.xml
 ```
+
+Now, you can sync normally:
+```
+repo sync
+```
+
+## Device support
+If your device has official LineageOS 16.0 trees available, you can use them here without any changes. This will always remain as an unofficial LineageOS - not something else (in other words, I'm not rebranding).
