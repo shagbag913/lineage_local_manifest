@@ -17,12 +17,12 @@ Lineage's upstream changes are *never* merged into my forks. Instead, I rebase m
 ## Syncing
 First, initialize LineageOS manifest:
 ```
-repo init -u https://github.com/LineageOS/android/ -b lineage-16.0
+repo init -u https://github.com/LineageOS/android/ -b lineage-17.0
 ```
 
 Then, add my local manifest (run this from top of Lineage source):
 ```
-curl --create-dirs -o .repo/local_manifests/lineage_fork.xml https://raw.githubusercontent.com/shagbag913/lineage_local_manifest/lineage-16.0/lineage_fork.xml
+curl --create-dirs -o .repo/local_manifests/lineage_fork.xml https://raw.githubusercontent.com/shagbag913/lineage_local_manifest/lineage-17.0/lineage_fork.xml
 ```
 
 Now, you can sync normally:
