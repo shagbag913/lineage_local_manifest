@@ -11,12 +11,11 @@
   <!-- Remove LineageOS/AOSP projects -->
 
   <remove-project name="LineageOS/android_frameworks_base" />
-  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
   <!-- Add forks -->
 
   <project path="frameworks/base" name="lineage_frameworks_base" remote="shagbag913" groups="pdk-cw-fs,pdk-fs" />
-  <project path="prebuilts/clang/host/linux-x86" name="lineage_prebuilts_clang_host_linux-x86" remote="shagbag913-gl" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="lineage_prebuilts_clang_host_linux-x86_clang-latest" remote="shagbag913" clone-depth="1" />
   <project path="vendor/extra" name="lineage_vendor_extra" remote="shagbag913" />
 
 </manifest>
