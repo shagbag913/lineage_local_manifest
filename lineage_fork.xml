@@ -4,9 +4,6 @@
   <remote name="shagbag913"
       fetch="https://github.com/shagbag913/"
       revision="lineage-17.0" />
-  <remote name="shagbag913-gl"
-      fetch="https://gitlab.com/shagbag913/"
-      revision="lineage-17.0" />
 
   <!-- Remove LineageOS/AOSP projects -->
 
